@@ -1,0 +1,15 @@
+.zipper
+  .zipper_line.o-left
+    - for (i = 0; i < 16; i++)
+      if i % 2 == 0
+        .zipper_lock.o-long
+      else
+        .zipper_lock.o-short
+  .zipper_line.o-right
+    - for (i = 0; i < 16; i++)
+      if i % 2 == 0
+        .zipper_lock.o-long
+      else
+        .zipper_lock.o-short
+  //- .zipper_lock.o-short
+  

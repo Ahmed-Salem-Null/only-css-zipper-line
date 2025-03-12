@@ -1,0 +1,474 @@
+body {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  font-family: "Anton", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.zipper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.zipper_line {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateY(10px);
+}
+.zipper_line.o-left {
+  transform: translateY(10px) scaleX(-1);
+}
+.zipper_lock {
+  position: absolute;
+  left: 134px;
+  height: 20px;
+  background: white;
+  transform-origin: -150px 50%;
+  -webkit-animation: move 6400ms linear infinite;
+          animation: move 6400ms linear infinite;
+  border-radius: 2px;
+}
+.zipper_lock::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  transform: scaleY(0.3);
+}
+.o-left .zipper_lock:nth-child(1) {
+  -webkit-animation-delay: -400ms;
+          animation-delay: -400ms;
+}
+.o-right .zipper_lock:nth-child(1) {
+  -webkit-animation-delay: -800ms;
+          animation-delay: -800ms;
+}
+.o-left .zipper_lock:nth-child(2) {
+  -webkit-animation-delay: -800ms;
+          animation-delay: -800ms;
+}
+.o-right .zipper_lock:nth-child(2) {
+  -webkit-animation-delay: -1200ms;
+          animation-delay: -1200ms;
+}
+.o-left .zipper_lock:nth-child(3) {
+  -webkit-animation-delay: -1200ms;
+          animation-delay: -1200ms;
+}
+.o-right .zipper_lock:nth-child(3) {
+  -webkit-animation-delay: -1600ms;
+          animation-delay: -1600ms;
+}
+.o-left .zipper_lock:nth-child(4) {
+  -webkit-animation-delay: -1600ms;
+          animation-delay: -1600ms;
+}
+.o-right .zipper_lock:nth-child(4) {
+  -webkit-animation-delay: -2000ms;
+          animation-delay: -2000ms;
+}
+.o-left .zipper_lock:nth-child(5) {
+  -webkit-animation-delay: -2000ms;
+          animation-delay: -2000ms;
+}
+.o-right .zipper_lock:nth-child(5) {
+  -webkit-animation-delay: -2400ms;
+          animation-delay: -2400ms;
+}
+.o-left .zipper_lock:nth-child(6) {
+  -webkit-animation-delay: -2400ms;
+          animation-delay: -2400ms;
+}
+.o-right .zipper_lock:nth-child(6) {
+  -webkit-animation-delay: -2800ms;
+          animation-delay: -2800ms;
+}
+.o-left .zipper_lock:nth-child(7) {
+  -webkit-animation-delay: -2800ms;
+          animation-delay: -2800ms;
+}
+.o-right .zipper_lock:nth-child(7) {
+  -webkit-animation-delay: -3200ms;
+          animation-delay: -3200ms;
+}
+.o-left .zipper_lock:nth-child(8) {
+  -webkit-animation-delay: -3200ms;
+          animation-delay: -3200ms;
+}
+.o-right .zipper_lock:nth-child(8) {
+  -webkit-animation-delay: -3600ms;
+          animation-delay: -3600ms;
+}
+.o-left .zipper_lock:nth-child(9) {
+  -webkit-animation-delay: -3600ms;
+          animation-delay: -3600ms;
+}
+.o-right .zipper_lock:nth-child(9) {
+  -webkit-animation-delay: -4000ms;
+          animation-delay: -4000ms;
+}
+.o-left .zipper_lock:nth-child(10) {
+  -webkit-animation-delay: -4000ms;
+          animation-delay: -4000ms;
+}
+.o-right .zipper_lock:nth-child(10) {
+  -webkit-animation-delay: -4400ms;
+          animation-delay: -4400ms;
+}
+.o-left .zipper_lock:nth-child(11) {
+  -webkit-animation-delay: -4400ms;
+          animation-delay: -4400ms;
+}
+.o-right .zipper_lock:nth-child(11) {
+  -webkit-animation-delay: -4800ms;
+          animation-delay: -4800ms;
+}
+.o-left .zipper_lock:nth-child(12) {
+  -webkit-animation-delay: -4800ms;
+          animation-delay: -4800ms;
+}
+.o-right .zipper_lock:nth-child(12) {
+  -webkit-animation-delay: -5200ms;
+          animation-delay: -5200ms;
+}
+.o-left .zipper_lock:nth-child(13) {
+  -webkit-animation-delay: -5200ms;
+          animation-delay: -5200ms;
+}
+.o-right .zipper_lock:nth-child(13) {
+  -webkit-animation-delay: -5600ms;
+          animation-delay: -5600ms;
+}
+.o-left .zipper_lock:nth-child(14) {
+  -webkit-animation-delay: -5600ms;
+          animation-delay: -5600ms;
+}
+.o-right .zipper_lock:nth-child(14) {
+  -webkit-animation-delay: -6000ms;
+          animation-delay: -6000ms;
+}
+.o-left .zipper_lock:nth-child(15) {
+  -webkit-animation-delay: -6000ms;
+          animation-delay: -6000ms;
+}
+.o-right .zipper_lock:nth-child(15) {
+  -webkit-animation-delay: -6400ms;
+          animation-delay: -6400ms;
+}
+.o-left .zipper_lock:nth-child(16) {
+  -webkit-animation-delay: -6400ms;
+          animation-delay: -6400ms;
+}
+.o-right .zipper_lock:nth-child(16) {
+  -webkit-animation-delay: -6800ms;
+          animation-delay: -6800ms;
+}
+.o-left .zipper_lock:nth-child(17) {
+  -webkit-animation-delay: -6800ms;
+          animation-delay: -6800ms;
+}
+.o-right .zipper_lock:nth-child(17) {
+  -webkit-animation-delay: -7200ms;
+          animation-delay: -7200ms;
+}
+.o-left .zipper_lock:nth-child(18) {
+  -webkit-animation-delay: -7200ms;
+          animation-delay: -7200ms;
+}
+.o-right .zipper_lock:nth-child(18) {
+  -webkit-animation-delay: -7600ms;
+          animation-delay: -7600ms;
+}
+.o-left .zipper_lock:nth-child(19) {
+  -webkit-animation-delay: -7600ms;
+          animation-delay: -7600ms;
+}
+.o-right .zipper_lock:nth-child(19) {
+  -webkit-animation-delay: -8000ms;
+          animation-delay: -8000ms;
+}
+.o-left .zipper_lock:nth-child(20) {
+  -webkit-animation-delay: -8000ms;
+          animation-delay: -8000ms;
+}
+.o-right .zipper_lock:nth-child(20) {
+  -webkit-animation-delay: -8400ms;
+          animation-delay: -8400ms;
+}
+.o-left .zipper_lock:nth-child(21) {
+  -webkit-animation-delay: -8400ms;
+          animation-delay: -8400ms;
+}
+.o-right .zipper_lock:nth-child(21) {
+  -webkit-animation-delay: -8800ms;
+          animation-delay: -8800ms;
+}
+.o-left .zipper_lock:nth-child(22) {
+  -webkit-animation-delay: -8800ms;
+          animation-delay: -8800ms;
+}
+.o-right .zipper_lock:nth-child(22) {
+  -webkit-animation-delay: -9200ms;
+          animation-delay: -9200ms;
+}
+.o-left .zipper_lock:nth-child(23) {
+  -webkit-animation-delay: -9200ms;
+          animation-delay: -9200ms;
+}
+.o-right .zipper_lock:nth-child(23) {
+  -webkit-animation-delay: -9600ms;
+          animation-delay: -9600ms;
+}
+.o-left .zipper_lock:nth-child(24) {
+  -webkit-animation-delay: -9600ms;
+          animation-delay: -9600ms;
+}
+.o-right .zipper_lock:nth-child(24) {
+  -webkit-animation-delay: -10000ms;
+          animation-delay: -10000ms;
+}
+.o-left .zipper_lock:nth-child(25) {
+  -webkit-animation-delay: -10000ms;
+          animation-delay: -10000ms;
+}
+.o-right .zipper_lock:nth-child(25) {
+  -webkit-animation-delay: -10400ms;
+          animation-delay: -10400ms;
+}
+.o-left .zipper_lock:nth-child(26) {
+  -webkit-animation-delay: -10400ms;
+          animation-delay: -10400ms;
+}
+.o-right .zipper_lock:nth-child(26) {
+  -webkit-animation-delay: -10800ms;
+          animation-delay: -10800ms;
+}
+.o-left .zipper_lock:nth-child(27) {
+  -webkit-animation-delay: -10800ms;
+          animation-delay: -10800ms;
+}
+.o-right .zipper_lock:nth-child(27) {
+  -webkit-animation-delay: -11200ms;
+          animation-delay: -11200ms;
+}
+.o-left .zipper_lock:nth-child(28) {
+  -webkit-animation-delay: -11200ms;
+          animation-delay: -11200ms;
+}
+.o-right .zipper_lock:nth-child(28) {
+  -webkit-animation-delay: -11600ms;
+          animation-delay: -11600ms;
+}
+.o-left .zipper_lock:nth-child(29) {
+  -webkit-animation-delay: -11600ms;
+          animation-delay: -11600ms;
+}
+.o-right .zipper_lock:nth-child(29) {
+  -webkit-animation-delay: -12000ms;
+          animation-delay: -12000ms;
+}
+.o-left .zipper_lock:nth-child(30) {
+  -webkit-animation-delay: -12000ms;
+          animation-delay: -12000ms;
+}
+.o-right .zipper_lock:nth-child(30) {
+  -webkit-animation-delay: -12400ms;
+          animation-delay: -12400ms;
+}
+.o-left .zipper_lock:nth-child(31) {
+  -webkit-animation-delay: -12400ms;
+          animation-delay: -12400ms;
+}
+.o-right .zipper_lock:nth-child(31) {
+  -webkit-animation-delay: -12800ms;
+          animation-delay: -12800ms;
+}
+.o-left .zipper_lock:nth-child(32) {
+  -webkit-animation-delay: -12800ms;
+          animation-delay: -12800ms;
+}
+.o-right .zipper_lock:nth-child(32) {
+  -webkit-animation-delay: -13200ms;
+          animation-delay: -13200ms;
+}
+.o-left .zipper_lock:nth-child(33) {
+  -webkit-animation-delay: -13200ms;
+          animation-delay: -13200ms;
+}
+.o-right .zipper_lock:nth-child(33) {
+  -webkit-animation-delay: -13600ms;
+          animation-delay: -13600ms;
+}
+.o-left .zipper_lock:nth-child(34) {
+  -webkit-animation-delay: -13600ms;
+          animation-delay: -13600ms;
+}
+.o-right .zipper_lock:nth-child(34) {
+  -webkit-animation-delay: -14000ms;
+          animation-delay: -14000ms;
+}
+.o-left .zipper_lock:nth-child(35) {
+  -webkit-animation-delay: -14000ms;
+          animation-delay: -14000ms;
+}
+.o-right .zipper_lock:nth-child(35) {
+  -webkit-animation-delay: -14400ms;
+          animation-delay: -14400ms;
+}
+.o-left .zipper_lock:nth-child(36) {
+  -webkit-animation-delay: -14400ms;
+          animation-delay: -14400ms;
+}
+.o-right .zipper_lock:nth-child(36) {
+  -webkit-animation-delay: -14800ms;
+          animation-delay: -14800ms;
+}
+.o-left .zipper_lock:nth-child(37) {
+  -webkit-animation-delay: -14800ms;
+          animation-delay: -14800ms;
+}
+.o-right .zipper_lock:nth-child(37) {
+  -webkit-animation-delay: -15200ms;
+          animation-delay: -15200ms;
+}
+.o-left .zipper_lock:nth-child(38) {
+  -webkit-animation-delay: -15200ms;
+          animation-delay: -15200ms;
+}
+.o-right .zipper_lock:nth-child(38) {
+  -webkit-animation-delay: -15600ms;
+          animation-delay: -15600ms;
+}
+.o-left .zipper_lock:nth-child(39) {
+  -webkit-animation-delay: -15600ms;
+          animation-delay: -15600ms;
+}
+.o-right .zipper_lock:nth-child(39) {
+  -webkit-animation-delay: -16000ms;
+          animation-delay: -16000ms;
+}
+.o-left .zipper_lock:nth-child(40) {
+  -webkit-animation-delay: -16000ms;
+          animation-delay: -16000ms;
+}
+.o-right .zipper_lock:nth-child(40) {
+  -webkit-animation-delay: -16400ms;
+          animation-delay: -16400ms;
+}
+.o-left .zipper_lock:nth-child(41) {
+  -webkit-animation-delay: -16400ms;
+          animation-delay: -16400ms;
+}
+.o-right .zipper_lock:nth-child(41) {
+  -webkit-animation-delay: -16800ms;
+          animation-delay: -16800ms;
+}
+.o-left .zipper_lock:nth-child(42) {
+  -webkit-animation-delay: -16800ms;
+          animation-delay: -16800ms;
+}
+.o-right .zipper_lock:nth-child(42) {
+  -webkit-animation-delay: -17200ms;
+          animation-delay: -17200ms;
+}
+.o-left .zipper_lock:nth-child(43) {
+  -webkit-animation-delay: -17200ms;
+          animation-delay: -17200ms;
+}
+.o-right .zipper_lock:nth-child(43) {
+  -webkit-animation-delay: -17600ms;
+          animation-delay: -17600ms;
+}
+.o-left .zipper_lock:nth-child(44) {
+  -webkit-animation-delay: -17600ms;
+          animation-delay: -17600ms;
+}
+.o-right .zipper_lock:nth-child(44) {
+  -webkit-animation-delay: -18000ms;
+          animation-delay: -18000ms;
+}
+.o-left .zipper_lock:nth-child(45) {
+  -webkit-animation-delay: -18000ms;
+          animation-delay: -18000ms;
+}
+.o-right .zipper_lock:nth-child(45) {
+  -webkit-animation-delay: -18400ms;
+          animation-delay: -18400ms;
+}
+.o-left .zipper_lock:nth-child(46) {
+  -webkit-animation-delay: -18400ms;
+          animation-delay: -18400ms;
+}
+.o-right .zipper_lock:nth-child(46) {
+  -webkit-animation-delay: -18800ms;
+          animation-delay: -18800ms;
+}
+.o-left .zipper_lock:nth-child(47) {
+  -webkit-animation-delay: -18800ms;
+          animation-delay: -18800ms;
+}
+.o-right .zipper_lock:nth-child(47) {
+  -webkit-animation-delay: -19200ms;
+          animation-delay: -19200ms;
+}
+.o-left .zipper_lock:nth-child(48) {
+  -webkit-animation-delay: -19200ms;
+          animation-delay: -19200ms;
+}
+.o-right .zipper_lock:nth-child(48) {
+  -webkit-animation-delay: -19600ms;
+          animation-delay: -19600ms;
+}
+.o-left .zipper_lock:nth-child(49) {
+  -webkit-animation-delay: -19600ms;
+          animation-delay: -19600ms;
+}
+.o-right .zipper_lock:nth-child(49) {
+  -webkit-animation-delay: -20000ms;
+          animation-delay: -20000ms;
+}
+.o-left .zipper_lock:nth-child(50) {
+  -webkit-animation-delay: -20000ms;
+          animation-delay: -20000ms;
+}
+.o-right .zipper_lock:nth-child(50) {
+  -webkit-animation-delay: -20400ms;
+          animation-delay: -20400ms;
+}
+.zipper_lock.o-long {
+  width: 20px;
+}
+.zipper_lock.o-short {
+  width: 10px;
+}
+
+@-webkit-keyframes move {
+  0% {
+    transform: translateY(150px) rotateZ(-90deg);
+  }
+  62% {
+    transform: translateY(150px) rotateZ(0deg);
+  }
+  100% {
+    transform: translateY(300px);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(150px) rotateZ(-90deg);
+  }
+  62% {
+    transform: translateY(150px) rotateZ(0deg);
+  }
+  100% {
+    transform: translateY(300px);
+  }
+}
